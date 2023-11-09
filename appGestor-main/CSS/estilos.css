@@ -1,0 +1,160 @@
+/* FONTS GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* VARIABLES */
+
+:root {
+    --blanco: #E0E0E0;
+    --azul-opacidad: #fff;
+    --bg-menu:black;
+    --bg-body: #C7E1FF;
+}
+
+/* GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--blanco); 
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    width: 100%;
+}
+
+.back{
+    position:relative;
+    height: 100px;
+}
+.container{
+    padding: 1%;
+    background-color: #ffff;
+}
+.menu{
+    background-color: black;
+    display: flex;
+    padding: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    height: 5vh;
+    width: 5%;
+}
+#upg{
+    height: 100%;
+}
+
+
+/* LAYOUT */
+
+.menu-dashboard {
+    max-width: 100px;
+    height: 100vh;
+    background: var(--bg-menu);
+    padding: 20px;
+    transition: max-width .3s ease;
+    position: absolute;
+}
+
+.top-menu {
+    align-items: center;
+    justify-content: center;
+}
+
+.top-menu .icon {
+    align-items: center;
+}
+
+.top-menu .icon img {
+    width: 40px;
+    transition: width .3s ease;
+}
+
+.top-menu .icon span {
+    font-size: 20px;
+    margin-left: 20px;
+    display: none;
+}
+
+.top-menu .toggle {
+    width: 50px;
+    height: 40px;
+    border-radius: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.top-menu .toggle i {
+    font-size: 35px;
+}
+
+/* ENLACES MENU */
+.seccion .enlace {
+    width: 0%;
+    padding: 10px 0px 10px 10px;
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: all .2s ease;
+    background-color: #ffffff;
+}
+
+.seccion .enlace:hover {
+    background:#ffff;
+}
+
+.seccion .enlace i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.seccion .enlace span {
+    text-align: center;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.menu-dashboard.open {
+    max-width: 250px;
+}
+
+.menu-dashboard.open .top-menu .icon span {
+    display: block;
+}
+
+.menu-dashboard.open .input-search
+.menu-dashboard.open .seccion .enlace {
+    width: auto;
+}
+
+.menu-dashboard.open .input-search .input {
+    display: block;
+}
+
+.menu-dashboard.open .seccion .enlace {
+    padding: 20px;
+}
+
+.menu-dashboard.open .seccion .enlace span {
+    opacity: 1;
+}
